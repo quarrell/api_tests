@@ -28,6 +28,9 @@ class TestData:
 
     HEADER = {'content-type': 'application/json; charset=UTF-8'}
 
+    HEADER_INVALID = {'content-type': 'application/xml'}
+    PAYLOAD_INVALID = {"someField": 100}
+
     COMMENTS_PAYLOAD = {"postId": 100, "id": 501, "name": "Test", "email": "test@test.test", "body": "test body"}
     ALBUM_PAYLOAD = {"userId": 2, "id": 101, "title": "Test title"}
     TODOS_PAYLOAD = {"title": "quo laboriosam deleniti aut qui"}
