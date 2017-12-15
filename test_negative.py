@@ -38,6 +38,6 @@ def test_unknown_domains():
 def test_invalid_app_id():
 
     # Should return 403
-    
+
     r = requests.get(DictData.DOMAIN + "/en/es", headers=DictData.INVALID_HEADER)
     assert r.status_code == requests.codes.forbidden
